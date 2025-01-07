@@ -53,7 +53,7 @@ export default function Sidebar() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <button
-                                        className="px-2 py-1 border border-rose-300 rounded-full w-8 h-8 hover:bg-red-600"
+                                        className="px-2 py-1 border border-rose-300 rounded-full size-8 hover:bg-red-600"
                                         onClick={() => removeFromCart(item.id)}
                                     >
                                         <Image

@@ -10,7 +10,7 @@ export default function CardWrapper() {
     const { isItemInCart } = useCart();
     return (
 
-        <div className="grid grid-cols-3 gap-4 mt-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8">
             {cardData.map((card, index) => {
                 const { id: id, image, name: title, category: category, price: price } = card;
 

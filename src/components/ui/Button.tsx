@@ -49,7 +49,7 @@ export default function Button({ id, name, price, image }: ButtonProps) {
             {activeBtn ? (
 
                 <div className="flex items-center gap-2  bg-red rounded-[100px] border-2 border-red px-6 py-2 justify-between w-1/2">
-                    <button className="border border-white rounded-[100%] flex items-center w-5 h-5" onClick={decreaseCount}>
+                    <button className="border border-white rounded-full flex items-center size-5" onClick={decreaseCount}>
                         <Image
                             aria-hidden
                             src="/images/icon-decrement-quantity.svg"
@@ -62,7 +62,7 @@ export default function Button({ id, name, price, image }: ButtonProps) {
                     </button>
 
                     <p className="m-0 text-white">{count}</p>
-                    <button className="border border-white rounded-[100%] flex items-center w-5 h-5" onClick={increaseCount}>
+                    <button className="border border-white rounded-full flex items-center size-5" onClick={increaseCount}>
                         <Image
                             aria-hidden
                             src="/images/icon-increment-quantity.svg"
@@ -77,7 +77,7 @@ export default function Button({ id, name, price, image }: ButtonProps) {
             ) : (
 
                 <button
-                    className="flex items-center gap-2 hover:text-red bg-foreground rounded-[100px] border-2 border-red px-6 py-2"
+                    className="flex items-center gap-2 hover:text-red bg-foreground rounded-full border-2 border-red px-6 py-2"
                     onClick={toggleButton}
                 >
                     <Image
